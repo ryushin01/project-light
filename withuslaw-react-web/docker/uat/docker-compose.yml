@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  with-docker-multi-env-uat:
+    build:
+      context: ../../
+      dockerfile: docker/uat/Dockerfile
+    image: with-docker-kos-fe-uat
+    ports:
+      - "0.0.0.0:3333:3333"
